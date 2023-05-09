@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
     res.send('success', 200);
 });
 
+router.get('/testhtml', (req, res) => {
+    res.sendFile(__dirname + '/documents/testhtml.html');
+});
+
 app.post('/sendemail', sendEmail.mail);
 
 app.listen(process.env.PORT || process.env.primaryPort, () => {
