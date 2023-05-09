@@ -1,0 +1,33 @@
+{
+    "name": "mailer",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js",
+        "run": "node index.js"
+    },
+    "author": "Ankit",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "nodemailer": "^6.7.7",
+        "nodemon": "^2.0.19"
+    },
+    "nodemonConfig": {
+        "verbose": true,
+        "ignore": [
+            "test/*",
+            "docs/*",
+            "fixtures/*"
+        ],
+        "execMap": {
+            "rb": "ruby",
+            "pde": "processing --sketch={{pwd}} --run"
+        },
+        "delay": 2500
+    }
+}
