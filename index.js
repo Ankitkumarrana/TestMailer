@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.send('success', 200);
 });
 
-router.get('/testhtml', (req, res) => {
+app.get('/testhtml', (req, res) => {
     res.sendFile(__dirname + '/documents/testhtml.html');
 });
 
