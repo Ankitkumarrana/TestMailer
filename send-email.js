@@ -18,7 +18,7 @@ const transporter = nodemailer.createTransport({
 
 const SendEmail = {
     mail(req, res) {
-        console.log(req.body);
+        // console.log(req.body);
         transporter.sendMail({
             from: req.body.from,
             to: req.body.to,
@@ -28,7 +28,7 @@ const SendEmail = {
         }).then(info => {
             res.status(200).send(info);
         }).catch(error => {
-            console.log(error);
+            // console.log(error);
             res.status(400).send(error);
         });
     },
